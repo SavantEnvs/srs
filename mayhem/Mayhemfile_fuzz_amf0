@@ -1,0 +1,9 @@
+project: savantenvs/srs
+target: fuzz_amf0
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_amf0/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_amf0
+    libfuzzer: true
+    timeout: 10

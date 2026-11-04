@@ -1,0 +1,9 @@
+project: savantenvs/srs
+target: fuzz_rtcp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rtcp/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_rtcp
+    libfuzzer: true
+    timeout: 10

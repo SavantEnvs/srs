@@ -1,0 +1,6 @@
+HTTP/1.1 200 OK
+Server: SRS
+Content-Type: video/x-flv
+Content-Length: 5
+
+hello
