@@ -1,0 +1,4 @@
+# Keep .git (the image carries the full mayhem branch history); drop build outputs.
+trunk/objs
+mayhem/out
+ctrf-report.json

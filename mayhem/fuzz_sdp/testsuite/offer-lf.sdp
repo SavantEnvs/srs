@@ -1,0 +1,45 @@
+v=0
+o=- 4611731400430051336 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0 1
+a=msid-semantic: WMS stream
+m=audio 9 UDP/TLS/RTP/SAVPF 111
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:ZkBn
+a=ice-pwd:0u8W0yPbfBMdEnBdbPNTYO1P
+a=fingerprint:sha-256 8F:2D:5B:3E:1A:0C:77:42:99:AB:CD:EF:01:23:45:67:89:AB:CD:EF:01:23:45:67:89:AB:CD:EF:01:23:45:67
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=ssrc:1001 cname:audiocname
+m=video 9 UDP/TLS/RTP/SAVPF 102 103
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:ZkBn
+a=ice-pwd:0u8W0yPbfBMdEnBdbPNTYO1P
+a=setup:actpass
+a=mid:1
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=sendrecv
+a=rtcp-mux
+a=rtcp-rsize
+a=rtpmap:102 H264/90000
+a=rtcp-fb:102 goog-remb
+a=rtcp-fb:102 transport-cc
+a=rtcp-fb:102 ccm fir
+a=rtcp-fb:102 nack
+a=rtcp-fb:102 nack pli
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f
+a=rtpmap:103 rtx/90000
+a=fmtp:103 apt=102
+a=ssrc-group:FID 2001 2002
+a=ssrc:2001 cname:videocname
+a=ssrc:2002 cname:videocname
+a=candidate:1 1 udp 2130706431 192.168.1.10 8000 typ host

@@ -1,0 +1,9 @@
+project: savantenvs/srs
+target: fuzz_ts
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ts/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_ts
+    libfuzzer: true
+    timeout: 10

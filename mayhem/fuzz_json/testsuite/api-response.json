@@ -1,0 +1,1 @@
+{"code":0,"server":"vid-1","service":"svc","pid":"42","data":{"streams":[{"id":"s1","name":"livestream","video":{"codec":"H264","profile":"High","level":"4.1","width":1280,"height":720},"audio":null,"publish":{"active":true,"cid":"x"},"kbps":{"recv_30s":1500.5,"send_30s":0}}],"ok":[true,false,null]}}
